@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#291126">
+  <title>Happy Birthday, Sree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Schoolbell&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="site-shell">
+    <div class="ambient-confetti" aria-hidden="true"></div>
+    <div class="top-mark" aria-hidden="true"><span>13/09/2006</span></div>
+
+    <section class="page page-one is-active" id="page-one" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A little celebration for someone extraordinary</p>
+        <h1 id="hero-title" aria-label="Happy Birthday Sree"></h1>
+        <p class="hero-subtitle">Today feels a little brighter because it is yours.</p>
+      </div>
+      <div class="hero-art">
+        <div class="art-ring art-ring-one"></div>
+        <div class="art-ring art-ring-two"></div>
+        <img class="cake-art" src="Groovy%20gift.svg" alt="Animated birthday gift" fetchpriority="high">
+        <span class="orbit-note orbit-note-one">with love</span>
+        <span class="orbit-note orbit-note-two">just for you mah!</span>
+      </div>
+      <button class="heart-button" id="open-moments" type="button" aria-label="Open our best moments">
+        <span>♥</span>
+      </button>
+      <p class="scroll-cue">Tap the heart to begin <span>↓</span></p>
+    </section>
+
+    <section class="page page-two" id="page-two" aria-labelledby="moments-title" aria-hidden="true" inert>
+      <div class="section-intro">
+        <p class="eyebrow">A small archive of us</p>
+        <h2 id="moments-title">Our best <em>moments</em> together.</h2>
+        <p>Six little reminders that ordinary days with you never feel ordinary MY HUMAN DYNAMITE. </p>
+      </div>
+      <div class="memory-grid">
+        <button class="memory-card memory-one" type="button" data-memory="The kind of laugh that makes a whole room lighter." data-image="laugh.jpg" data-orientation="portrait">
+          <img class="memory-image" alt="" aria-hidden="true"><span class="memory-close" role="button" tabindex="0" aria-label="Close image">×</span><span class="memory-number">01</span><span class="memory-art">✦</span><span class="memory-caption">The bright days</span><span class="memory-message"></span>
+        </button>
+        <button class="memory-card memory-two" type="button" data-memory="Every adventure is better when you are beside me." data-image="love.jpg" data-orientation="portrait">
+          <img class="memory-image" alt="" aria-hidden="true"><span class="memory-close" role="button" tabindex="0" aria-label="Close image">×</span><span class="memory-number">02</span><span class="memory-art">◌</span><span class="memory-caption">Little adventures</span><span class="memory-message"></span>
+        </button>
+        <button class="memory-card memory-three" type="button" data-memory="You make even the quiet moments feel like a gift." data-image="happy.jpg" data-orientation="portrait">
+          <img class="memory-image" alt="" aria-hidden="true"><span class="memory-close" role="button" tabindex="0" aria-label="Close image">×</span><span class="memory-number">03</span><span class="memory-art">♡</span><span class="memory-caption">Soft evenings</span><span class="memory-message"></span>
+        </button>
+        <button class="memory-card memory-four" type="button" data-memory="My favorite place has always been wherever we are together." data-image="golden.jpg" data-orientation="portrait">
+          <img class="memory-image" alt="" aria-hidden="true"><span class="memory-close" role="button" tabindex="0" aria-label="Close image">×</span><span class="memory-number">04</span><span class="memory-art">☼</span><span class="memory-caption">Golden hours</span><span class="memory-message"></span>
+        </button>
+        <button class="memory-card memory-five" type="button" data-memory="Thank you for making the everyday feel a little magical." data-image="bliss.jpg" data-orientation="portrait">
+          <img class="memory-image" alt="" aria-hidden="true"><span class="memory-close" role="button" tabindex="0" aria-label="Close image">×</span><span class="memory-number">05</span><span class="memory-art">✺</span><span class="memory-caption">Tiny magic</span><span class="memory-message"></span>
+        </button>
+        <button class="memory-card memory-six" type="button" data-memory="More memories are waiting for us, and I cannot wait." data-image="cute.jpg" data-orientation="portrait">
+          <img class="memory-image" alt="" aria-hidden="true"><span class="memory-close" role="button" tabindex="0" aria-label="Close image">×</span><span class="memory-number">06</span><span class="memory-art">∞</span><span class="memory-caption">To be continued</span><span class="memory-message"></span>
+        </button>
+      </div>
+      <button class="next-button" id="open-gift" type="button" aria-label="Continue to the birthday gift"><span>↓</span></button>
+    </section>
+
+    <section class="page page-three" id="page-three" aria-labelledby="gift-title" aria-hidden="true" inert>
+      <div class="gift-intro">
+        <p class="eyebrow">One last thing</p>
+        <h2 id="gift-title">A gift, wrapped<br><em>in a wish.</em></h2>
+      </div>
+      <button class="gift-stage" id="gift-button" type="button" aria-label="Open your birthday gift">
+        <span class="gift-glow"></span>
+        <span class="gift-shadow"></span>
+        <img src="Groovy%20gift.svg" alt="Animated birthday gift box" fetchpriority="high">
+        <span class="gift-hint">tap to open</span>
+      </button>
+      <div class="gift-message" id="gift-message" aria-live="polite">
+        <p>Happy birthday, my love.</p>
+        <p>Hey Sree this is Jagzz!, I made this website just for u hehehe super laaa i tried my best mahh unaku pudikum intha maari oru birthday wish, So madam became 20 years old this birthday chaaa periya ponnu aaita laa neeeee but your innocence stays like a little toddler i met on 2023 july 3rd... Many phase cross panni vanthuta nee and you have grown stronger mentally ofcourse unna 16th age la irunthu vazhathitaa kudaveh irunthu guide panni and unkitta irunthu neraiya things learn pannita YOU ARE JUST FULL OF SURPRISES!!! and From sept 17th your career is going to start im really happy for u my babygirl stay tight i will be there in 11 days after you heheheee and once again very veryy veryyy happyy 20th birthday Sree!! LOVE YOU DII <3. Every moment with you is my favorite memory. Here’s to many more birthdays together. I love you, Sree. <span>♥</span></p>
+      </div>
+      <button class="replay-button" id="replay" type="button">Replay the little celebration</button>
+    </section>
+  </main>
+  <div class="touch-burst" id="touch-burst" aria-hidden="true"></div>
+  <div class="memory-lightbox" id="memory-lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-card" role="dialog" aria-modal="true" aria-labelledby="lightbox-message">
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close enlarged memory">×</button>
+      <img class="lightbox-image" id="lightbox-image" alt="">
+      <p class="lightbox-message" id="lightbox-message"></p>
+    </div>
+  </div>
+</body>
+</html>
